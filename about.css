@@ -1,0 +1,819 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+  
+body{
+    background-color: black;
+   
+}
+
+.bur{
+    
+    scroll-behavior: smooth;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 80%;
+    grid-template-rows: 100%;
+    gap: 10px;
+    padding: 10px;
+    background-image: url(boss1.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.burhead{
+ 
+ 
+display: flex;
+position: fixed;
+width: 77.7%;
+gap: 10px;
+height: 50px;
+ margin:  auto;
+margin-left: 20px;
+}
+.dal{
+ 
+    
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+ 
+}
+.daldal{
+    justify-content: space-between;
+    display: flex;
+    padding: 10px 20px;
+
+  
+
+}
+.dol{
+    background-image: url(logo.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    
+   height: 100%;
+   width: 50px;
+
+} 
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 20px;
+  
+}
+a:hover{
+    color: red;
+    transition: 0.3s ease-in-out;
+}
+
+.main{
+   
+
+    background-color: transparent;
+
+    color: rgb(255, 253, 253);
+
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.938);
+    scrollbar-width: none;
+    padding: 10px;
+    margin-top:50px;
+    height: 91vh;
+  overflow-y: auto;
+
+
+
+ 
+}   
+.box1{
+   
+    width: 100%;
+    height: 50px;
+  padding-left: 10px;
+  
+}
+.box2{
+    animation: luataw 3s ease forwards;
+    width: 100%;
+height: 500px;
+margin-top: 10px;
+display: grid;
+grid-template-columns: 1fr 3fr;
+grid-template-rows: auto ;
+gap: 5px;
+
+}
+.all2{
+
+display: flex;
+flex-direction: column;
+
+}
+.box{
+  
+height: 33.3%;
+
+}
+
+.all{
+    background-image: url(akonani.jpg);
+    background-position: center;
+    background-size: cover;
+    animation: luataw 3s ease forwards;
+    
+}
+h2{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: rgb(255, 0, 43);
+    animation: luataw 3s ease forwards;
+}
+p{
+    font-style: italic;
+    color: gray;
+    padding-left: 10px;
+    text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box3{
+   
+    width: 100%;
+height: 500px;
+margin-top: 10px;
+display: grid;
+grid-template-columns: 1/ 3 1fr;
+grid-template-rows: 100px auto;
+gap: 10px;
+padding: 5px;
+
+}
+
+h5{
+    font-size: 20px;
+    padding-top: 2rem;
+    padding-left: 10px;
+    color: gray;
+    font-weight: 100;
+    font-family: sans-serif;
+    
+}
+
+
+h1{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: luataw 3s ease forwards;
+}
+.box i{
+    color: red;
+    font-size: 10px;
+    margin-right: 10px;
+}   
+.box span{
+    color: gray;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 15px;
+}
+.box h4{
+
+ padding-top: 2rem;
+padding-left: 10px;
+}
+.changes{
+    display: flex;
+
+}
+.twobox{
+
+    width: 100%;
+}
+ .para{
+    color: rgb(225, 215, 215);
+    font-size: 14.1px;
+  
+ }
+
+ .das{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 5px;
+   
+ }
+.sixbox{
+  
+
+
+border: 1px solid rgb(95, 95, 95);
+box-shadow: 1px 2px 2px rgb(0, 0, 0);
+font-size: 25px;
+
+display: grid;
+grid-template-columns: 1fr 3fr;
+grid-template-rows: auto;
+animation: luataw 5s ease forwards;
+}
+@keyframes luataw {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.sixbox:hover, .fourbox:hover{
+    background-color: rgb(29, 28, 28);
+    opacity: 0.9;
+    transition: 0.2s;
+}
+.fa-spotify{
+    color: green;
+}
+.fa-camera{
+    color: rgb(60, 60, 206);
+}
+.fa-video{
+    color: rgb(230, 198, 125);
+}
+.fa-discord{
+    color: rgba(28, 28, 247, 0.834);
+}
+.fa-figma{
+    color: #F24E1E;
+}
+.fa-dumbbell{
+    color: rgb(230, 230, 125);
+}
+.fa-basketball{
+    color: rgb(255, 234, 0);
+ 
+}
+.fa-gamepad{
+    color: aqua;
+}
+.hold{
+
+  padding-left: 20px;
+  padding-top: 3rem;
+width: 100%;
+}
+h6{
+    text-align: start;
+    padding-top: 2px;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+.box4{
+
+    width: 100%;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1/ 3 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 10px;
+    padding: 5px;
+
+}
+.duhaka{
+
+    
+}
+.duh{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 5px;
+    
+}
+.sixka{
+   
+    animation: luataw 5s ease forwards;
+ text-align: center;
+ padding-top: 3rem;
+ font-size: 30px;
+    
+}
+.sixka img {
+    max-width: 20%;
+    max-height: 30%;
+    object-fit: contain;
+
+}
+.fa-html5{
+    color: orange;
+}
+.fa-css3-alt{
+    color: rgb(26, 26, 237);
+}
+.fa-js{
+    color: yellow;
+}
+.fa-java{
+    color: rgb(255, 123, 0);
+}
+.fa-html5, .fa-css3-alt, .fa-js, .fat, .fa-java, img{
+    width: 100px;
+    height: 100px;
+  
+
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+.fa-html5:hover, .fa-css3-alt:hover, .fa-js:hover,  .fat:hover, .fa-java:hover, .sixka img:hover{
+    transform: scale(1.2);
+}
+.hold img{
+    width: 40%;
+    object-fit: cover;
+    height: 50%;
+    border-radius: 50%;
+}
+ .daldal i{
+display: none;
+text-align: end;
+ 
+}
+summary i{
+    color: white;
+padding-left: 20rem;
+    
+   
+}
+summary i:hover{
+    color: red;
+
+}
+.menu a{
+    display: none;
+
+}
+
+.secondbox{
+
+    height: auto    ;
+    width: 100%;
+}
+.tawbox{
+    width: 100%;
+    /* border: 1px solid white; */
+    animation: luataw 5s ease forwards;
+
+}
+.duha{
+    display: grid;
+    grid-template-columns: 1 / 3 1fr;
+    grid-template-rows: 100px auto;
+}
+
+.holdbox h1{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding-left: 20px;
+   padding-top: 1.5rem;
+   animation: luataw 3s ease forwards;
+   color: white;
+}
+
+.ab{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100px 100px;
+    gap: 10px;
+    padding: 20px;
+}
+.fourbox{
+    /* border: 1px solid white; */
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100px auto;
+    box-shadow: 0 0 1px 0px rgb(255, 255, 255);
+ 
+
+    
+    
+    
+}
+
+.towbox{
+
+    font-size: 2rem;
+  justify-content: center;
+    align-items: center;
+    display: flex;
+    
+
+
+  
+}
+
+.fa-phone-volume, .fa-share-nodes, .fa-envelope, .fa-location-dot{
+    color: rgb(255, 0, 60);
+}
+
+.towbox h2{
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    color: white;
+
+}
+span{
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 20px;
+    
+}
+span i{
+ 
+    font-family: sans-serif;
+    font-size: 25px;
+padding-left: 10px;
+}
+.fa-facebook:hover, .fa-linkedin:hover{
+    color: blue;
+    transition: 0.3s ease-in-out;
+}
+
+
+.fa-instagram:hover{
+    color: orange;
+    transition: 0.3s ease-in-out;
+}
+.towbox1 {
+    animation: luataw 5s ease forwards;
+    max-width: 100%;
+  
+    background-color: transparent;
+    padding: 20px;
+    
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .form-input {
+    flex: 1;
+    padding: 10px;
+ height: 50px;
+    border-radius: 6px;
+    background-color: transparent;
+
+
+    color: rgb(255, 250, 250);
+    font-size: 14px;
+    text-decoration: none;
+  
+  }
+  input::placeholder,
+textarea::placeholder {
+  color: #ffffff;
+opacity: 0.8;
+}
+  
+  .full-width {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .form-textarea {
+    width: 100%;
+    height: 15rem;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+ background-color: transparent;
+
+
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+ 
+  button{
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+
+  }
+  .button-con{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+   
+  }
+  
+  button:hover {
+    background-color: rgb(225, 17, 17);
+  }
+
+  .project{
+ 
+    width: 100%;
+    height: 500px;
+  display: grid;
+  grid-template-columns: 1 /3 1fr;
+  grid-template-rows: 100px auto;
+  }
+  .project1{
+    
+gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+
+  }
+
+.headsix{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.class{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project1:hover .ho:not(:hover){
+    opacity: 0.7;
+    transform: scale(.85);
+}
+.ho{
+  
+}
+
+img{width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2%;
+    opacity: 0.9;
+
+}
+.hoo1{
+    background-image: url(firstproject.png);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid white;
+
+}
+.hoo2{
+    background-image: url(pro1.png);
+    background-position: center;
+    background-size: cover;
+}
+.hoo3{
+    background-image: url(table.png);
+    background-position: center;
+    background-size: cover;
+}
+@media (max-width: 1024px) {
+    .project1{
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+    .hoo1, .hoo2, .hoo3{
+        display: block;
+    }
+    .ab {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 100px);
+      }
+    
+      .fourbox {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+      }
+      .towbox i {
+          font-size: 25px;
+      }
+      .towbox h2{
+          font-size: 10px;
+      }
+      .holdbox h1{
+          font-size: 30px;
+      }
+      span{
+          font-size: 10px;
+      }
+    
+      .form-row {
+        flex-direction: column;
+      }
+    
+      input,
+      textarea {
+        width: 100%;
+      }
+      .duha{
+        margin-top: 10rem;
+    }
+    .bur{
+        margin-top: 5px;
+    }
+    .daldal i{
+        display: flex;
+       
+    }
+    .menu {
+   
+        background-color: #000000;
+        border: 1px solid #2f2f2f;
+        border-radius: 10px;
+        padding: 10px 0;
+        
+        min-width: 50px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    
+      .menu a {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: #333;
+      }
+    
+      .menu a:hover {
+        background-color: #ff0404;
+        color: white;
+      }
+
+     a{
+       display: none; 
+    }
+
+.para{
+    font-size: 10px;
+}
+.box2{
+    grid-template-rows: 450px;
+}
+h1{
+    font-size: 30px;
+}
+.box i {
+    font-size: 7px;
+}
+.box span{
+   font-size: 10px;
+}
+.main{
+    font-size: 12px;
+}
+
+.box3{
+ 
+    height: 400px;
+    grid-template-rows: 100px;
+ 
+}
+h2{
+    font-size: 22px;
+}
+.hold{
+    padding-top: 1.5rem;
+}
+.das{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 80px 80px 80px 80px 80px;
+}
+.box4{
+    margin-top: 20rem;
+}
+    p{
+        font-size: 10px;
+    }
+    .hold h6{
+        font-size: 15px;
+    }
+    .headsix{
+        font-size: 40px;
+    }
+   
+}
+
+
+
+@media (max-width: 500px) {
+    .towbox h2{
+        font-size: 10px;
+    }
+    .holdbox h1{
+        font-size: 30px;
+    }
+   .main{
+
+    width: 450px;
+   }
+   .box2{
+    grid-template-columns: repeat(1,1fr);
+   }
+   .box3{
+    margin-top: 25rem;
+   }
+    .project1{
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: repeat(1,1fr);
+        height: auto;
+    }
+    .hoo1, .hoo2, .hoo3{
+        display: block;
+    }
+    .holdbox h1 {
+        font-size: 24px;
+        padding-left: 10px;
+      }
+    
+     
+      input,
+      textarea {
+        font-size: 12px;
+      }
+    
+      button {
+        width: 100%;
+      }
+    
+      .button-con {
+        padding: 0 10px;
+      }
+      .duha{
+          margin-top: 10rem;
+      }
+.bur{
+    background-image: none;
+
+}
+.box4{
+    margin-top: 35rem;
+    height: 550px;
+
+}
+.das{
+    grid-template-columns: repeat(1,1fr);
+
+}
+.duh{
+    grid-template-columns: repeat(2,1fr);
+}
+.sixbox{
+ 
+    grid-template-rows: 80px;
+
+
+}
+.hold{
+    padding-top: 2rem;
+
+}
+.main{
+ 
+ font-size: 10px;  
+
+}
+.box span{
+    font-size: 11px;
+}
+
+h2{
+    font-size: 20px;
+}
+.para{
+    font-size: 12px;
+}
+p{
+    font-size: 12px;
+}
+.headsix{
+    font-size: 30px;
+}
+
+
+}
