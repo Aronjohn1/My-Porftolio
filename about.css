@@ -580,7 +580,7 @@ img{width: 100%;
     background-image: url(firstproject.png);
     background-position: center;
     background-size: cover;
-    border: 1px solid white;
+
 
 }
 .hoo2{
@@ -589,7 +589,7 @@ img{width: 100%;
     background-size: cover;
 }
 .hoo3{
-    background-image: url(table.png);
+ background-image: url(info.png);
     background-position: center;
     background-size: cover;
 }
