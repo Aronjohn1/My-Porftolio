@@ -257,10 +257,7 @@ padding-top: 1rem;
     color: white;
     font-size: 20px;
 }
-.nine-box i{
-    color: blue;
-    font-size: 25px;
-}
+
 .nine-box i:hover{
     color: red;
     transition: 0.3s ease-in-out;
@@ -270,6 +267,38 @@ padding-top: 1rem;
     height: 70px;
 margin-left: -25px;
 
+}
+.fa-video{
+    color: gray;
+    
+}
+.fa-camera{
+    color: blue;
+   
+}
+.fa-spotify{
+    color: green;
+ 
+}
+.fa-discord{
+    color: rgb(50, 50, 249);
+ 
+}
+.fa-gamepad{
+    color: rgb(75, 255, 72);
+  
+}
+.fa-basketball{
+    color: orange;
+  
+}
+.fa-dumbbell{
+    color: rgb(80, 71, 255);
+  
+}
+.nine-box i{
+
+    font-size: 25px;
 }
 
 .skills{
@@ -607,7 +636,7 @@ button{
 
     .right,
     .left {
-      
+    
     }
 .right{
     border-radius: 50%;
@@ -617,7 +646,7 @@ button{
     
 }
     .left {
-      
+  
     }
     .int{
         grid-template-columns: repeat(2,1fr);
@@ -697,7 +726,7 @@ button{
         width: 30px;
         height: 30px;
     }
-      .header h1{
+    .header h1{
         font-size: 30px;
     }
 }
