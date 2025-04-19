@@ -634,13 +634,11 @@ button{
         grid-column: 1;
     }
 
-    .right,
-    .left {
-    
-    }
+ 
 .right{
     border-radius: 50%;
-    width: 40%;
+    width: 45%;
+    box-shadow: 0 0 2px 2px rgb(251, 5, 5);
     
     margin: 20px auto;
     
