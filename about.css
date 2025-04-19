@@ -1,516 +1,479 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
-  
-body{
-    background-color: black;
-   
+html{
+    scroll-behavior: smooth;
 }
 
-.bur{
-    
- 
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: 80%;
-    grid-template-rows: 100%;
-    gap: 10px;
-    padding: 10px;
+body{
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+    background-color: black;
     background-image: url(boss1.jpg);
     background-position: center;
     background-size: cover;
-
+   
 }
-
-.burhead{
- 
- 
-display: flex;
-position: fixed;
-width: 77.7%;
-gap: 10px;
-height: 50px;
- margin:  auto;
-margin-left: 20px;
+.second{
+    width: 100%;
 }
-.dal{
- 
+.first{
+   
     
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
- 
-}
-.daldal{
-    justify-content: space-between;
-    display: flex;
-    padding: 10px 20px;
-
-  
-
-}
-.dol{
-    background-image: url(logo.png);
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-    
-   height: 100%;
-   width: 50px;
-
-} 
-a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: sans-serif;
-    font-size: 20px;
-  
-}
-a:hover{
-    color: red;
-    transition: 0.3s ease-in-out;
-}
-
-.main{
-   
- scroll-behavior: smooth;
-    background-color: transparent;
-
-    color: rgb(255, 253, 253);
-
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.938);
+    height: 100vh;
+    overflow-y: auto;
     scrollbar-width: none;
     padding: 10px;
-    margin-top:50px;
-    height: 91vh;
-  overflow-y: auto;
-
-
+    scroll-behavior: smooth;
+}
+.navs {
+   
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 700px;
+  width: 100%;
+  height: 60px;
+  margin-top: 0;
 
  
-}   
-.box1{
+}
+
+.nav {
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 2px 2px black ;
+    
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 700px;
+
+}
+
+.nav a, .navs a{
+    color: white;
+    text-decoration: none;
+  
+
+}
+details{
+    display: none;
+}
+.nav a:hover{
+ 
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+}
+.navs{
+    display: none;
+}
+
+.navs i{
+    display: none;
+    color: white;
+margin-top: -20px;
+padding-left: 30px;
+padding-top: 1rem;
+
+
+}
+
    
-    width: 100%;
-    height: 50px;
-  padding-left: 10px;
-  
-}
-.box2{
-    animation: luataw 3s ease forwards;
-    width: 100%;
-height: 500px;
-margin-top: 10px;
-display: grid;
-grid-template-columns: 1fr 3fr;
-grid-template-rows: auto ;
-gap: 5px;
+
+.nav i:hover{
+    color: red;
 
 }
-.all2{
-
-display: flex;
-flex-direction: column;
+.menu a, .menus a{
+    display: none;
 
 }
-.box{
-  
-height: 33.3%;
+.nav img, .navs img{
+ width:70px;
+  height: 100%;
 
 }
+.aboutme{
+    /* border: 1px solid white; */
+    height: auto;
+    width: 100%s;
+    /* margin-top: 5rem; */
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-rows: 100px;
+    padding: 10px;
+    gap: 10px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
 
-.all{
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+.holdabout{
+    /* border: 1px solid red; */
+}
+.header{
+    grid-column: 1 /4;
+    padding-top: 1rem;
+}
+.header h1{
+    font-family: sans-serif;
+    font-size: 40px;
+    color: white;
+    animation: appear 5s linear;
+    animation-timeline:view();
+    animation-range: entry 30% cover 30%;
+
+
+  padding: 10px;
+}
+.right{
+    grid-column: 1;
+    box-shadow: 0 0 5px 5px black ;
     background-image: url(akonani.jpg);
     background-position: center;
     background-size: cover;
-    animation: luataw 3s ease forwards;
-    
+    border-radius: 20px;
 }
-h2{
-    font-family: sans-serif;
-    font-weight: 100;
-    font-size: 25px;
-    padding-top: 10px;
-    padding-left: 10px;
-    color: rgb(255, 0, 43);
-    animation: luataw 3s ease forwards;
-}
-p{
-    font-style: italic;
-    color: gray;
-    padding-left: 10px;
-    text-align: justify;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.box3{
-   
-    width: 100%;
-height: 500px;
-margin-top: 10px;
-display: grid;
-grid-template-columns: 1/ 3 1fr;
-grid-template-rows: 100px auto;
-gap: 10px;
-padding: 5px;
+.left{
+    grid-column: 2 / span 2;
+    /* border: 1px solid blue; */
+  display: grid;
+
+  height: auto;
 
 }
-
-h5{
-    font-size: 20px;
-    padding-top: 2rem;
-    padding-left: 10px;
-    color: gray;
-    font-weight: 100;
-    font-family: sans-serif;
-    
-}
-
-
-h1{
-    font-size: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    animation: luataw 3s ease forwards;
-}
-.box i{
-    color: red;
-    font-size: 10px;
-    margin-right: 10px;
-}   
-.box span{
-    color: gray;
-    font-family: sans-serif;
-    font-style: italic;
-    font-weight: 100;
-    font-size: 15px;
-}
-.box h4{
-
- padding-top: 2rem;
-padding-left: 10px;
-}
-.changes{
-    display: flex;
-
-}
-.twobox{
-
-    width: 100%;
-}
- .para{
-    color: rgb(225, 215, 215);
-    font-size: 14.1px;
-  
- }
-
- .das{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    gap: 10px;
-    padding: 5px;
-   
- }
-.sixbox{
-  
-
-
-border: 1px solid rgb(95, 95, 95);
-box-shadow: 1px 2px 2px rgb(0, 0, 0);
-font-size: 25px;
-
-display: grid;
-grid-template-columns: 1fr 3fr;
-grid-template-rows: auto;
-animation: luataw 5s ease forwards;
-}
-@keyframes luataw {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-.sixbox:hover, .fourbox:hover{
-    background-color: rgb(29, 28, 28);
-    opacity: 0.9;
-    transition: 0.2s;
-}
-.fa-spotify{
-    color: green;
-}
-.fa-camera{
-    color: rgb(60, 60, 206);
-}
-.fa-video{
-    color: rgb(230, 198, 125);
-}
-.fa-discord{
-    color: rgba(28, 28, 247, 0.834);
-}
-.fa-figma{
-    color: #F24E1E;
-}
-.fa-dumbbell{
-    color: rgb(230, 230, 125);
-}
-.fa-basketball{
-    color: rgb(255, 234, 0);
+.info{
+    /* border: 1px solid red; */
+    height: 100%;
  
 }
-.fa-gamepad{
-    color: aqua;
+.info2{
+    display: flex;
+    flex-direction: column;
 }
-.hold{
-
-  padding-left: 20px;
-  padding-top: 3rem;
-width: 100%;
-}
-h6{
-    text-align: start;
-    padding-top: 2px;
-    font-size: 20px;
-    font-weight: 100;
-    font-family: sans-serif;
-}
-.box4{
-
-    width: 100%;
-    height: 450px;
-    display: grid;
-    grid-template-columns: 1/ 3 1fr;
-    grid-template-rows: 100px 100px;
-    gap: 10px;
-    padding: 5px;
-
-}
-.duhaka{
-
+.infotwo{
+    /* border: 1px solid white; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between  ;
+    padding:  10px;
     
 }
-.duh{
+.infotwo i{
+    color: red;
+ 
+}
+.infotwo h3{
+    color: white;
+    font-size: 10px;
+}
+
+.infotwo span{
+    color: gray;
+    font-size: 12px;
+}
+
+
+.info h2{
+    color: red;
+    padding: 10px;
+    font-size: 30px;
+}
+.info p{
+    color: gray;
+    padding: 10px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.interest{
+    /* border: 1px solid pink; */
+    display: grid;
+    grid-template-columns: 1 / 3 1fr;
+    grid-template-rows: 100px auto;
+    width: 100%;
+    height: auto;
+    padding: 10px ;
+    gap: 10px;
+}
+.interest-box{
+    /* border: 1px solid brown; */
+}
+.int{
+    /* border: 1px solid rgb(255, 0, 255); */
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
+    grid-template-rows: 100px 100px 100px;
+    height: auto;
     gap: 10px;
-    padding: 5px;
-    
+    padding: 10px;
 }
-.sixka{
-   
-    animation: luataw 5s ease forwards;
- text-align: center;
- padding-top: 3rem;
- font-size: 30px;
-    
-}
-.sixka img {
-    max-width: 20%;
-    max-height: 30%;
-    object-fit: contain;
+.interest-box h1{
+    color: rgb(156, 156, 156);
+    padding: 10px;
+    padding-top: 2.5rem;
+    font-size: 15px;
+    animation: appear 5s linear;
+    animation-timeline:view();
+    animation-range: entry 30% cover 30%;
+  }
+.nine-box{
+    border: 1px solid rgb(54, 54, 54);
+    box-shadow: 0 0 5px 5px rgb(0, 0, 0) ;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5rem;
+    padding: 10px;
+  animation: appear 5s linear;
+  animation-timeline:view();
+  animation-range: entry 30% cover 40%;
 
+
+   
+    align-items: center;
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.4;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.nine-box h2{
+    color: white;
+    font-size: 20px;
+}
+.nine-box i{
+    color: blue;
+    font-size: 25px;
+}
+.nine-box i:hover{
+    color: red;
+    transition: 0.3s ease-in-out;
+}
+.nine-box img{
+    width: 80px;
+    height: 70px;
+margin-left: -25px;
+
+}
+
+.skills{
+    /* border: 1px solid orange; */
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1 / 3 1fr;
+    grid-template-rows: 100px auto;
+    gap: 10px;
+    padding: 10px;
+
+}
+.skills-box{
+    /* border: 1px solid orangered; */
+  
+    
+   
+}
+.six{
+    /* border: 1px solid orangered; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 100px;
+    gap: 10px;
+    padding: 10px; 
+    height: auto;
+}
+.six-skills{
+    border: 1px solid rgb(54, 54, 54);
+    box-shadow: 0 0 5px 5px rgb(0, 0, 0) ;
+    display: flex;
+ align-items: center;
+    justify-content: center;
+    animation: appear 5s linear;
+    animation-timeline:view();
+    animation-range: entry 30% cover 40%;
+}
+
+.contactme{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1 / 3 1fr;
+    grid-template-rows: 100px auto;
+    gap: 10px;
+    padding: 10px;
+}
+.contact-box{
+    /* border: 1px solid blue; */
+}
+.contact-box h1{
+    color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+    padding: 10px;
+    padding-top: 2rem;
+    animation: appear 5s linear;
+    animation-timeline:view();
+    animation-range: entry 30% cover 30%;
+}
+.con{
+    display: grid;
+    grid-template-columns: 1 / 3 1 / 3;
+    grid-template-rows: 240px 500px;
+}
+.hold-address{
+    /* border: 1px solid red; */
+
+}
+
+.foradd{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ grid-template-rows: 100px 100px;
+ padding: 10px;
+ gap: 10px;
+ 
+
+
+}
+.four-add{
+    border: 1px solid rgb(54, 54, 54);
+    box-shadow: 0 0 5px 5px rgb(0, 0, 0) ;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    animation: appear 5s linear;
+    animation-timeline:view();
+    animation-range: entry 30% cover 40%;
+    align-items: center;
+}
+.four-add i{
+    color: red;
+    font-size: 25px;
+}
+
+.four-add h2{
+color: white;
+font-size: 20px;
+
+
+}
+.four-add span{
+    color: gray;
+    font-size: 15px;
+}
+.four-add a i{
+padding-right: 53px;
+padding-top: 10px;
+
+    font-size: 20px;
+    color: white;
+    
+}
+.adjust  i{
+ margin-right: 50px;
+}
+.adjust h2{
+    margin-right: 75px;  
+}
+
+.skills-box h1{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: rgb(156, 156, 156);
+    padding: 10px;
+    padding-top: 1.5rem;
+    animation: appear 5s linear;
+    animation-timeline:view();
+    animation-range: entry 30% cover 40%;
+}
+.six-skills img{
+    width: 40px;
+    height: 40px;
+
+
+}
+.six-skills i{
+    font-size: 40px;
+    
+    
 }
 .fa-html5{
     color: orange;
+    
 }
 .fa-css3-alt{
-    color: rgb(26, 26, 237);
+    color: blue;
 }
 .fa-js{
     color: yellow;
 }
+.fa-figma{
+    color: rgb(248, 188, 76);
+}
 .fa-java{
-    color: rgb(255, 123, 0);
+    color: rgb(243, 49, 49);
 }
-.fa-html5, .fa-css3-alt, .fa-js, .fat, .fa-java, img{
-    width: 100px;
-    height: 100px;
-  
-
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-
-}
-.fa-html5:hover, .fa-css3-alt:hover, .fa-js:hover,  .fat:hover, .fa-java:hover, .sixka img:hover{
-    transform: scale(1.2);
-}
-.hold img{
-    width: 40%;
-    object-fit: cover;
-    height: 50%;
-    border-radius: 50%;
-}
- .daldal i{
-display: none;
-text-align: end;
- 
-}
-summary i{
-    color: white;
-padding-left: 20rem;
-    
-   
-}
-summary i:hover{
-    color: red;
-
-}
-.menu a{
-    display: none;
-
-}
-
-.secondbox{
-
-    height: auto    ;
-    width: 100%;
-}
-.tawbox{
-    width: 100%;
-    /* border: 1px solid white; */
-    animation: luataw 5s ease forwards;
-
-}
-.duha{
-    display: grid;
-    grid-template-columns: 1 / 3 1fr;
-    grid-template-rows: 100px auto;
-}
-
-.holdbox h1{
-    font-size: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   padding-left: 20px;
-   padding-top: 1.5rem;
-   animation: luataw 3s ease forwards;
-   color: white;
-}
-
-.ab{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 100px 100px;
-    gap: 10px;
+form {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-}
-.fourbox{
-    /* border: 1px solid white; */
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 100px auto;
-    box-shadow: 0 0 1px 0px rgb(255, 255, 255);
- 
-
-    
-    
-    
-}
-
-.towbox{
-
-    font-size: 2rem;
-  justify-content: center;
-    align-items: center;
-    display: flex;
-    
-
-
-  
-}
-
-.fa-phone-volume, .fa-share-nodes, .fa-envelope, .fa-location-dot{
-    color: rgb(255, 0, 60);
-}
-
-.towbox h2{
-    font-family: sans-serif;
-    font-weight: 200;
-    font-size: 30px;
-    color: white;
 
 }
-span{
-    font-weight: 100;
-    font-family: sans-serif;
-    font-size: 20px;
-    
-}
-span i{
- 
-    font-family: sans-serif;
-    font-size: 25px;
-padding-left: 10px;
-}
-.fa-facebook:hover, .fa-linkedin:hover{
-    color: blue;
-    transition: 0.3s ease-in-out;
-}
 
-
-.fa-instagram:hover{
-    color: orange;
-    transition: 0.3s ease-in-out;
-}
-.towbox1 {
-    animation: luataw 5s ease forwards;
-    max-width: 100%;
-  
-    background-color: transparent;
-    padding: 20px;
-    
-  }
-  
-  .form-row {
+.input-row {
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
-  }
-  
-  .form-input {
+    
+}
+
+.input-row input {
     flex: 1;
     padding: 10px;
- height: 50px;
-    border-radius: 6px;
-    background-color: transparent;
-
-
-    color: rgb(255, 250, 250);
-    font-size: 14px;
-    text-decoration: none;
-  
-  }
-  input::placeholder,
-textarea::placeholder {
-  color: #ffffff;
-opacity: 0.8;
-}
-  
-  .full-width {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .form-textarea {
-    width: 100%;
-    height: 15rem;
-    padding: 10px;
-    color: rgb(255, 255, 255);
-    border-radius: 6px;
- background-color: transparent;
-
-
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
+    background: transparent;
+    color: white;
  
-  button{
+    outline: none;
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+background: transparent;
+    color: white;
+    animation: appear 5s linear;
+    animation-timeline:view();
+    animation-range: entry 30% cover 40%;
+    outline: none;
+    resize: none;
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+textarea {
+    height: 200px;
+}
+button{
     background-color: red;
     color: rgb(255, 255, 255);
     border: none;
@@ -520,6 +483,9 @@ opacity: 0.8;
     font-size: 14px;
     transition: background-color 0.3s ease;
     width: 200px;
+    animation: appear 5s linear;
+    animation-timeline:view();
+    animation-range: entry 30% cover 40%;
 
   }
   .button-con{
@@ -528,292 +494,395 @@ opacity: 0.8;
     margin-top: 10px; 
    
   }
-  
   button:hover {
     background-color: rgb(225, 17, 17);
   }
 
-  .project{
- 
+
+.project{
+    /* border: 1px solid white; */
     width: 100%;
-    height: 500px;
-  display: grid;
-  grid-template-columns: 1 /3 1fr;
-  grid-template-rows: 100px auto;
-  }
-  .project1{
-    
-gap: 10px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1 / 3 1fr;
+    grid-template-rows: 100px auto;
+    padding: 10px;
+    gap: 10px;
+}
+.twopro{
+    /* border: 1px solid  blue; */
+
+}
+.twopro h1{
+    color: white;
+    font-size: 40px;
+ padding-top: 2rem;
+ animation: appear 5s linear;
+ animation-timeline:view();
+ animation-range: entry 30% cover 30%;
+}
+.tre{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-
-  }
-
-.headsix{
-    font-size: 50px;
-    font-family: sans-serif;
-    font-weight: bold;
-}
-.class{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.project1:hover .ho:not(:hover){
-    opacity: 0.7;
-    transform: scale(.85);
-}
-.ho{
+    grid-template-rows: 400px ;
+    padding: 10px;
+    gap: 10px;
   
 }
-
-img{width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 2%;
-    opacity: 0.9;
-
+.threepro{
+    border: 1px solid rgb(54, 54, 54);
+    box-shadow: 0 0 5px 5px rgb(0, 0, 0) ;
+    animation: appear 5s linear;
+    animation-timeline:view();
+    animation-range: entry 30% cover 40%;
 }
-.hoo1{
+.pro1{
     background-image: url(firstproject.png);
     background-position: center;
     background-size: cover;
-
-
 }
-.hoo2{
+.pro2{
     background-image: url(pro1.png);
     background-position: center;
     background-size: cover;
 }
-.hoo3{
- background-image: url(info.png);
+.pro3{
+    background-image: url(info.png);
     background-position: center;
     background-size: cover;
 }
-@media (max-width: 1024px) {
-    .project1{
-        grid-template-rows: 300px 300px 300px;
-        grid-template-columns: repeat(2,1fr);
-    
+
+
+@media (max-width:1124px) {
+
+    .first{
+        width: 80%;
+        padding: 0;
     }
-    .hoo1, .hoo2, .hoo3{
-        display: block;
-    }
-    .ab {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 100px);
-      }
-    
-      .fourbox {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-      }
-      .towbox i {
-          font-size: 25px;
-      }
-      .towbox h2{
-          font-size: 10px;
-      }
-      .holdbox h1{
-          font-size: 30px;
-      }
-      span{
-          font-size: 10px;
-      }
-    
-      .form-row {
-        flex-direction: column;
-      }
-    
-      input,
-      textarea {
+    .navs{
         width: 100%;
-      }
-      .duha{
-        margin-top: 10rem;
-    }
-    .bur{
-        margin-top: 5px;
-    }
-    .daldal i{
-        display: flex;
-       
-    }
-    .menu {
-   
-        background-color: #000000;
-        border: 1px solid #2f2f2f;
-        border-radius: 10px;
-        padding: 10px 0;
-        
-        min-width: 50px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      }
-    
-      .menu a {
         display: block;
-        padding: 8px 16px;
-        text-decoration: none;
-        color: #333;
-      }
-    
-      .menu a:hover {
-        background-color: #ff0404;
+    }
+    .navs a{
+        display: none;
+    }
+    .navs i{
+        display: flex;
         color: white;
-      }
-
-     a{
-       display: none; 
+    }
+    .menus a{
+        display: flex;
+    }
+    .menus{
+        margin-left: 10px;
+        background-color: rgb(0, 0, 0);
+        width: 15%;
+        padding: 20px;
+        border: 1px solid gray;
+        border-radius: 20px;
+    }
+    .menus a:hover{
+        color: red;
+    }
+    details{
+        display: block;
+        
+    }
+    
+    .aboutme {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 400px 450px;
+    height: auto;
+    margin-top: 10rem;
     }
 
-.para{
-    font-size: 10px;
-}
-.box2{
-    grid-template-rows: 450px;
-}
-h1{
-    font-size: 30px;
-}
-.box i {
-    font-size: 7px;
-}
-.box span{
-   font-size: 10px;
-}
-.main{
-    font-size: 12px;
-}
-
-.box3{
- 
-    height: 400px;
-    grid-template-rows: 100px;
- 
-}
-h2{
-    font-size: 22px;
-}
-.hold{
-    padding-top: 1.5rem;
-}
-.das{
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 80px 80px 80px 80px 80px;
-}
-.box4{
-    margin-top: 20rem;
-}
-    p{
-        font-size: 10px;
+    .header {
+        grid-column: 1;
     }
-    .hold h6{
-        font-size: 15px;
+
+    .right,
+    .left {
+        grid-column: 1;
     }
-    .headsix{
-        font-size: 40px;
+
+    .right,
+    .left {
+        border: 1px solid rgb(0, 255, 102);
     }
-   
+.right{
+    border-radius: 50%;
+    width: 40%;
+    
+    margin: 20px auto;
+    
 }
-
-
-
-@media (max-width: 500px) {
-    .towbox h2{
-        font-size: 10px;
+    .left {
+        border: 1px solid blue;
     }
-    .holdbox h1{
-        font-size: 30px;
+    .int{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 100px 100px 100px  100px 100px;
+      
+        
     }
-   .main{
-
-    width: 450px;
-   }
-   .box2{
-    grid-template-columns: repeat(1,1fr);
-   }
-   .box3{
-    margin-top: 25rem;
-   }
-    .project1{
-        grid-template-rows: 300px 300px 300px;
-        grid-template-columns: repeat(1,1fr);
+    .interest{
         height: auto;
     }
-    .hoo1, .hoo2, .hoo3{
-        display: block;
+
+   
+    .six{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 100px 100px 100px 100px;
+    height: auto;
     }
-    .holdbox h1 {
-        font-size: 24px;
-        padding-left: 10px;
-      }
+
+
+    form {
+        padding: 15px;
+    }
+
+    .input-row {
+        gap: 8px;
+    }
+
+    textarea {
+        height: 180px;
+    }
+
+    .tre{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 400px 400px 400px;
+        height: 840px;
+    }
+    .infotwo h3{
     
-     
-      input,
-      textarea {
         font-size: 12px;
-      }
+        
+        
+    }
+   
+    .infotwo span{
+   
+        font-size: 12px;
+      
+    }
+    .par{
+        font-size: 10px;
+    }
     
-      button {
+    .info h2{
+       
+        font-size: 20px;
+    }
+    .info p{
+       
+        font-size: 15px;
+    }
+    .nine-box h2{
+        font-size: 20px;
+      
+        padding-right: 5rem;
+    }
+ body{
+    grid-template-columns: 1fr;
+ }
+    .second{
+        display: none;
+    }
+   
+    .six-skills i{
+        font-size: 30px;
+    }
+    .six-skills img{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (max-width: 780px) {
+    body{
+        background-image: none;
+    }
+    .first {
         width: 100%;
+        padding: 0;
+    }
+   
+.menus{
+    width: 25%;
+}
+      .aboutme {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 400px 700px;
+    height: auto;
+    }
+    .right{
+        border-radius: 50%;
+        width: 50%;
+ 
+        
+        margin: 20px auto;
+        
+    }
+      .interest{
+        height: auto;
       }
+      .int{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 100px  100px 100px 100px 100px 100px 100px 100px 100px;
+        height: 600px;
+      }
+      .six{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        height: 350px;
+      }
+      .input-row {
+        flex-direction: column;
+    }
+
+    .input-row input {
+        width: 100%;
+    }
+
+    textarea {
+        height: 160px;
+    }
+    .foradd{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 100px 100px 100px 100px;
     
-      .button-con {
-        padding: 0 10px;
-      }
-      .duha{
-          margin-top: 10rem;
-      }
-.bur{
-    background-image: none;
-
+       
+    }
+   
+ .project{
+    height: auto;
+ }
+    .tre{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 400px  400px 400px;
+        height: auto;
+    }
+    .infotwo h3{
+    
+        font-size: 13px;
+        
+        
+    }
+    
+    .infotwo span{
+   
+        font-size: 12px;
+    }
+    .nine-box h2{
+        font-size: 20px;
+      
+        padding-right: 1rem;
+    }
+    .header h1{
+        font-size: 20px;
+    }
+    .info h2{
+        font-size: 15px;
+    }
+    .nine-box i{
+        font-size: 15px;
+    }
+    .nine-box h2{
+        font-size: 15px;
+    }
+    .six-skills i{
+        font-size: 30px;
+    }
+    .six-skills img{
+        width: 30px;
+        height: 30px;
+    }
 }
-.box4{
-    margin-top: 35rem;
-    height: 550px;
 
+@media screen and (max-width: 500px) {
+    .first {
+        width: 100%;
+        padding: 0;
+    }
+    .nav {
+        width: 100%;
+    }
+    .foradd{
+        grid-template-columns: repeat(1,1fr);
+      grid-template-rows: 100px 100px 100px 100px;
+     
+       
 }
-.das{
+.aboutme {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 250px 400px;
+height: auto;
+}
+.right{
+    border-radius: 50%;
+    width: 45%;
+    
+    margin: 20px auto;
+    
+}
+
+.con{
+    grid-template-rows: 500px 500px;
+}
+
+.six{
     grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    height: auto;
+  }
+  .int{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 100px  100px 100px 100px 100px 100px 100px 100px 100px;
+    height: auto;
+  }
+  .infotwo h3{
+    
+    font-size: 10px;
+    
+    
+}
+.infotwo i {
+    padding-left: 5px;
+}
+.infotwo span{
 
+    font-size: 10px;
 }
-.duh{
-    grid-template-columns: repeat(2,1fr);
+.nine-box{
+    padding: 50px;
 }
-.sixbox{
+.nine-box h2{
+    font-size: 20px;
  
-    grid-template-rows: 80px;
-
-
+    padding-right: 2rem;
 }
-.hold{
-    padding-top: 2rem;
-
+.left p{
+    font-size: 10px;
 }
-.main{
- 
- font-size: 10px;  
-
+.nine-box i{
+    font-size: 15px;
 }
-.box span{
-    font-size: 11px;
+.nine-box h2{
+    font-size: 15px;
 }
-
-h2{
+.contact-box h1{
     font-size: 20px;
 }
-.para{
-    font-size: 12px;
+.four-add h2{
+    font-size: 15px;
 }
-p{
-    font-size: 12px;
+.four-add i{
+    font-size: 15px;
 }
-.headsix{
-    font-size: 30px;
+.four-add span{
+    font-size: 12x;
 }
-
-
+.twopro h1{
+    font-size: 20px;
+}
 }
