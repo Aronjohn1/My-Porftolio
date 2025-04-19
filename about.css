@@ -918,4 +918,22 @@ height: auto;
 .twopro h1{
     font-size: 20px;
 }
+.menus{
+    width: 30%;
+}
+}
+
+@media screen and (max-width: 400px) {
+    .aboutme {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 200px 400px;
+    height: auto;
+    }
+    .right{
+        border-radius: 50%;
+        width: 45%;
+        
+        margin: 20px auto;
+        
+    }
 }
