@@ -617,7 +617,7 @@ button{
     
 }
     .left {
-        border: 1px solid blue;
+      
     }
     .int{
         grid-template-columns: repeat(2,1fr);
